@@ -126,10 +126,10 @@ const Trident = () => {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Menu.Items className="origin-top-right absolute mt-1 -mr-10 z-20 border-2 border-gray-800 rounded-md shadow-lg bg-black focus:outline-none">
-                  <div className="flex flex-col px-4 py-3 text-gray-400">
+                  <div className="py-1 text-gray-400">
                     {item.contents.map(contents => (
                       <Menu.Item key={contents.name}>
-                        <Link href={contents.href} className="hover:text-gray-100">
+                        <Link href={contents.href}>
                           {/* <a className=" hover:bg-gray-800 hover:text-white  block px-4 py-2 text-sm" > */}
                           {contents.name}
                           {/* </a> */}
